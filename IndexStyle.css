@@ -1,0 +1,154 @@
+html {
+	height: 100%;
+}
+
+body {
+	/*background-color: PowderBlue;*/
+	background: -webkit-linear-gradient(#ffffff, #888888);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div {
+	padding: 10px;
+}
+
+.NavBar {
+	background-color: #888888;
+}
+
+
+.NavBar a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#HomeNav, #ContactNav, #AboutNav{
+	transition: font-size .2s;
+	line-height: 0px;
+	/*font-size: 14px;*/
+}
+
+#HomeNav:hover, #ContactNav:hover, #AboutNav:hover{
+	font-size: 20px;
+}
+
+.NavBarBox {
+	line-height: 0px;
+	border: 1px solid #000000;
+	display: inline-block;
+	width: 100px;
+	height: 45px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.GlobalHeader {
+	padding: 80px;
+	text-align: left;
+	width:100%;
+}
+
+#GHtitle {
+	font-size: 50px;
+	background: -webkit-linear-gradient(#CCCCCC, #111111);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Arial;
+}
+
+/*
+.GlobalHeader:hover {
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+	0% {transform: scale(1);}
+	50% {transform: scale(1.01);}
+	100% {transform: scale(1);}
+}
+*/
+
+.LeftSideBar {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.LeftSideBar a {
+	/*background-color: #e5e5e5;*/
+	padding: 8px;
+	margin-top: 15px;
+	display: block;
+	width: 100%;
+	color: black;
+	background-color: #fff;
+	border:none;
+	border-radius:15px;
+	box-shadow: 0 9px #999;
+}
+
+.LeftSideBar a:hover{background-color: #ccc}
+
+.LeftSideBar a:active {
+	background-color: #888;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.Body {
+	float: left;
+	width: 50%;
+	height: 500px;
+	padding: 0 20px;
+	opacity = 1;
+	border = none;
+	transition: 1s opacity;
+}
+
+#Body {
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+#bodyHTML {
+	height: 100%;
+	width: 100%;
+}
+
+.RightSideBar {
+	float: left;
+	background-color: #e5e5e5;
+	width: 25%;
+}
+
+.RightSideBar img {
+	/*max-width:50%;*/
+	width: 100px;
+	height: 95px;
+	transition: transform .2s;
+	border-radius: 75%;
+}
+
+.RightSideBar img:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5);
+}
+
+.Footer p {
+	background-color: #e5e5e5;
+	text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+	/* For mobile phones: */
+	.LeftSideBar, .RightSideBar, .Body {
+		width: 100%;
+	}
+}

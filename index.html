@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="IndexStyle.css">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="IndexJava.js"></script>
+		<title>Page Title</title>
+	</head>
+
+	<body>
+
+		<div class="GlobalHeader">
+			<div id="GHtitle">Adam Otto</div>
+			<div id="GHitem1"></div>
+		</div>
+		
+		<div class="NavBar">
+			<div class="NavBarBox">
+				<a id="HomeNav" href="#!" onclick="LoadNewPage('Home.html')">Home</a>
+			</div>
+			<div class="NavBarBox">
+				<a id="AboutNav" href="#!" onclick="LoadNewPage('About.html')">About</a>
+			</div>
+			<div class="NavBarBox">
+				<a id="ContactNav" href="#!" onclick="LoadNewPage('Contact.html')">Contact</a>
+			</div>
+		</div>
+		<div class="MainBody">
+			<div class="LeftSideBar">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+				<a href="#">Link 4</a>
+			</div>
+			<div id="Body" class="Body">
+				<iframe id="bodyHTML" src="Home.html"></iframe>
+			</div>
+			<div class="RightSideBar">
+				<p>
+					Heres a picture of a wee ninja.
+					<br>
+					Aww, isn't he cute!
+				</p>
+				<img id="ninja" src="Pictures/wee_ninja.jpg"/>
+			</div>
+		</div>
+		<div style="clear: both;">
+			<div class="Footer">
+				<p>
+					&#169; Adam Otto
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+
